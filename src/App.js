@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+import Header from './components/Header';
+import Layout from './components/Layout';
+import Plans from './components/Plan/Plans';
+import Sidebar from './components/Sidebar';
+import './index.css'
 
-function App() {
+export default function App() {
+ 
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <section className="flex">
+        <Layout>
+          <div>
+            <Plans/>
+          </div>
+        </Layout>
+      </section>
     </div>
   );
 }
-
-export default App;

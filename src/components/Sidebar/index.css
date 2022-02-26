@@ -1,0 +1,18 @@
+.sidebar {
+  width: 200px;
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left:0;
+}
+
+.sidebar-options{
+  list-style:none;
+}
+
+
+.sidebar-option{
+  padding:20px;
+}
